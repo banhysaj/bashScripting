@@ -15,19 +15,25 @@ is_ip_reachable() {
 
 check_certificate() {
     local ip=$1
-    cert_info=$(echo | openssl s_client -connect "$ip:443" -servername "$ip" 2>/dev/null | openssl x509 -noout -dates)
+    local temp_cert_file=$(mktemp)
+
+    # Fetch certificate and save to a temporary file
+    echo | openssl s_client -connect "$ip:443" -servername "$ip" 2>/dev/null | openssl x509 -out "$temp_cert_file" -noout -dates
     
     if [ $? -ne 0 ]; then
         echo "invalid"
+        rm -f "$temp_cert_file"
         return
     fi
 
-    start_date=$(echo "$cert_info" | grep 'notBefore' | cut -d= -f2)
-    end_date=$(echo "$cert_info" | grep 'notAfter' | cut -d= -f2)
+    start_date=$(grep 'notBefore' "$temp_cert_file" | cut -d= -f2)
+    end_date=$(grep 'notAfter' "$temp_cert_file" | cut -d= -f2)
 
     start_date_seconds=$(date -d "$start_date" +%s)
     end_date_seconds=$(date -d "$end_date" +%s)
     current_date_seconds=$(date +%s)
+
+    rm -f "$temp_cert_file"
 
     if [ "$current_date_seconds" -ge "$start_date_seconds" ] && [ "$current_date_seconds" -le "$end_date_seconds" ]; then
         echo "valid"
@@ -64,7 +70,6 @@ check_server_response_time() {
     fi
 }
 
-
 check_tls_protocols() {
     local ip=$1
     tls_status="secure"
@@ -84,8 +89,11 @@ html_report="report.html"
 echo "<html><head><title>Security Report</title></head><body><h1>Security Report</h1><table border='1'><tr><th>IP</th><th>Certificate</th><th>Ports</th><th>Server</th><th>TLS</th><th>Can Enter Sensitive Info</th></tr>" > "$html_report"
 
 text_report="result.txt"
-echo "Security Report" > "$text_report"
-echo "======================" >> "$text_report"
+# Only write the header to the text report if it does not exist
+if [ ! -f "$text_report" ]; then
+    echo "Security Report" > "$text_report"
+    echo "======================" >> "$text_report"
+fi
 
 IFS=$'\n'
 for ip in $(cat "ips.txt"); do
