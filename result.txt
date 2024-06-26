@@ -1,1 +1,740 @@
-
+Security Report
+======================
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Certificate Details: invalid
+Ports: secured
+Server Response Time: valid
+Server Response Time Details: 0.676757 seconds
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: invalid
+Certificate Details: 
+Ports: secured
+Server Response Time: valid
+Server Response Time Details: 0.072362 seconds
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.195.35
+Certificate: invalid
+Certificate Details: 
+Ports: secured
+Server Response Time: valid
+Server Response Time Details: 0.119757 seconds
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 142.250.187.100
+Certificate: invalid
+Certificate Details: 
+Ports: secured
+Server Response Time: valid
+Server Response Time Details: 0.094105 seconds
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Certificate Details: invalid
+Ports: secured
+Port Details:  Port 80 22 21 20 443: open;
+Server Response Time: valid
+Server Response Time Details: 0.694237 seconds
+TLS: secure
+TLS Details:  TLSv1: not supported; TLSv1.1: not supported;
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: invalid
+Certificate Details: 
+Ports: secured
+Port Details:  Port 80 22 21 20 443: open;
+Server Response Time: valid
+Server Response Time Details: 0.069109 seconds
+TLS: secure
+TLS Details:  TLSv1: not supported; TLSv1.1: not supported;
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.195.35
+Certificate: invalid
+Certificate Details: 
+Ports: secured
+Port Details:  Port 80 22 21 20 443: open;
+Server Response Time: valid
+Server Response Time Details: 0.119491 seconds
+TLS: secure
+TLS Details:  TLSv1: not supported; TLSv1.1: not supported;
+Can Enter Sensitive Info: NO
+----------------------
+IP: 142.250.187.100
+Certificate: invalid
+Certificate Details: 
+Ports: secured
+Port Details:  Port 80 22 21 20 443: open;
+Server Response Time: valid
+Server Response Time Details: 0.112741 seconds
+TLS: secure
+TLS Details:  TLSv1: not supported; TLSv1.1: not supported;
+Can Enter Sensitive Info: NO
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.174
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.174
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 185.202.151.39
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 104.26.14.232
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.174
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 185.202.151.39
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 104.26.14.232
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 80.91.115.153
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 142.250.187.100
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.9.174
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 185.202.151.39
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 104.26.14.232
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: NO
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 93.184.215.14
+Vulnerabilities Found: No
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: 
+Can Enter Sensitive Info: NO
+----------------------
+IP: 93.184.215.14
+Vulnerabilities Found: No
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: 
+Can Enter Sensitive Info: NO
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 93.184.215.14
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: NO
+----------------------
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: YES
+Can Enter Sensitive Info: NO
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: NO
+----------------------
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: NO
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: NO
+----------------------
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: YES
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: invalid
+TLS: secure
+Vulnerabilities: NO
+Can Enter Sensitive Info: NO
+----------------------
+Vulnerabilities
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 172.67.72.91
+Certificate: invalid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: NO
+----------------------
+IP: 157.240.9.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+IP: 34.117.44.137
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Can Enter Sensitive Info: YES
+----------------------
+Vulnerabilities
+IP: 80.91.115.154
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+IP: 157.240.195.35
+Certificate: valid
+Ports: secured
+Server: valid
+TLS: secure
+Vulnerabilities: not found
+Can Enter Sensitive Info: YES
+----------------------
+Vulnerabilities
+Vulnerabilities

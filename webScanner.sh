@@ -17,7 +17,6 @@ check_certificate() {
     local ip=$1
     local temp_cert_file=$(mktemp)
 
-    # Fetch certificate and save to a temporary file
     echo | openssl s_client -connect "$ip:443" -servername "$ip" 2>/dev/null | openssl x509 -out "$temp_cert_file" -noout -dates
     
     if [ $? -ne 0 ]; then
@@ -85,15 +84,44 @@ check_tls_protocols() {
     echo "$tls_status"
 }
 
+perform_nmap_scan() {
+    local ip=$1
+    
+    nmap_output=$(nmap -sV --script vulners "$ip" -oX -)
+
+    if echo "$nmap_output" | grep -q "CVE"; then
+        echo "Found"
+    else
+        echo "none"
+    fi
+}
+
+read -p "Do you want to scan for vulnerabilities? (y/n): " scan_vulnerabilities
+
+if [[ "$scan_vulnerabilities" == "y" || "$scan_vulnerabilities" == "Y" ]]; then
+    include_vulnerabilities="yes"
+elif [[ "$scan_vulnerabilities" == "n" || "$scan_vulnerabilities" == "N" ]]; then
+    include_vulnerabilities="no"
+else
+    echo "Invalid input. Exiting."
+    exit 1
+fi
+
 html_report="report.html"
-echo "<html><head><title>Security Report</title></head><body><h1>Security Report</h1><table border='1'><tr><th>IP</th><th>Certificate</th><th>Ports</th><th>Server</th><th>TLS</th><th>Can Enter Sensitive Info</th></tr>" > "$html_report"
+echo "<html><head><title>Security Report</title></head><body><h1>Security Report</h1><table border='1'><tr><th>IP</th><th>Certificate</th><th>Ports</th><th>Server</th><th>TLS</th>" > "$html_report"
 
 text_report="result.txt"
-# Only write the header to the text report if it does not exist
 if [ ! -f "$text_report" ]; then
     echo "Security Report" > "$text_report"
     echo "======================" >> "$text_report"
 fi
+
+if [ "$include_vulnerabilities" == "yes" ]; then
+    echo "<th>Vulnerabilities</th>" >> "$html_report"
+    echo "Vulnerabilities" >> "$text_report"
+fi
+
+echo "<th>Can Enter Sensitive Info</th></tr>" >> "$html_report"
 
 IFS=$'\n'
 for ip in $(cat "ips.txt"); do
@@ -108,6 +136,12 @@ for ip in $(cat "ips.txt"); do
     port_status=$(check_ports "$ip")
     server_status=$(check_server_response_time "$ip")
     tls_status=$(check_tls_protocols "$ip")
+
+    if [ "$include_vulnerabilities" == "yes" ]; then
+        vuln_status=$(perform_nmap_scan "$ip")
+    else
+        vuln_status="N/A"
+    fi
 
     if [ "$cert_status" = "valid" ] && [ "$port_status" = "secured" ] && [ "$server_status" = "valid" ] && [ "$tls_status" = "secure" ]; then
         sensitive_info="YES"
@@ -124,15 +158,25 @@ for ip in $(cat "ips.txt"); do
 <td>$port_status</td>
 <td>$server_status</td>
 <td>$tls_status</td>
-<td>$sensitive_info</td>
-</tr>
 EOF
+
+    if [ "$include_vulnerabilities" == "yes" ]; then
+        echo "<td>$vuln_status</td>" >> "$html_report"
+    fi
+
+    echo "<td>$sensitive_info</td>" >> "$html_report"
+    echo "</tr>" >> "$html_report"
 
     echo "IP: $ip" >> "$text_report"
     echo "Certificate: $cert_status" >> "$text_report"
     echo "Ports: $port_status" >> "$text_report"
     echo "Server: $server_status" >> "$text_report"
     echo "TLS: $tls_status" >> "$text_report"
+    
+    if [ "$include_vulnerabilities" == "yes" ]; then
+        echo "Vulnerabilities: $vuln_status" >> "$text_report"
+    fi
+    
     echo "Can Enter Sensitive Info: $sensitive_info" >> "$text_report"
     echo "----------------------" >> "$text_report"
 done

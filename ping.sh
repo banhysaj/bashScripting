@@ -1,15 +1,24 @@
 #!/bin/bash
 
-read -p "Enter the URL to ping: " url
+while true; do
+    read -p "Enter the URL to ping (enter '0' to exit): " url
 
-ip=$(ping -c 1 $url | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | head -n 1)
+    if [ "$url" = "0" ]; then
+        echo "Exiting..."
+        break
+    fi
 
-if [ -n "$ip" ]; then
-echo "IP address of $url: $ip"
-echo "$ip" >> ips.txt
-echo "IP written to ips.txt"
+    domain=$(echo "$url" | sed -e 's|http://||' -e 's|https://||')
 
-else
-echo "Failed to obtain IP address for $url"
-fi
+    domain=$(echo "$domain" | cut -d'/' -f1)
 
+    ip=$(ping -c 1 "$domain" | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | head -n 1)
+
+    if [ -n "$ip" ]; then
+        echo "IP address of $url: $ip"
+        echo "$ip" >> ips.txt
+        echo "IP written to ips.txt"
+    else
+        echo "Failed to obtain IP address for $url"
+    fi
+done
